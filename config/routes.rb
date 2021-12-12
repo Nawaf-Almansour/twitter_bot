@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   get "sing_up", to: "registrations#new"
   # post /sing_up
   post "sing_up", to: "registrations#create"
+
+  # GET /sing_in
+  get "sing_in", to: "sessions#new"
+  # post /sing_in
+  post "sing_in", to: "sessions#create"
+
   # delete /logout
   delete "logout", to: "sessions#destroy"
   # GET /
